@@ -1,0 +1,10 @@
+# GPU AI backends on top of requirements.txt.
+#
+# torch must come from the CUDA wheel index (pick the cuXXX matching your
+# driver; see https://pytorch.org/get-started/locally/):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+# then:
+#   pip install -r requirements.txt -r requirements-gpu.txt
+
+ultralytics>=8.2   # YOLO vehicle + plate detection
+easyocr>=1.7       # deep-learning OCR (uses torch)

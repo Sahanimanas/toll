@@ -1,0 +1,19 @@
+# GPU build: CUDA-enabled torch base + YOLO/EasyOCR backends.
+# Run with the docker-compose.gpu.yml overlay (or `docker run --gpus all`).
+FROM pytorch/pytorch:2.3.1-cuda12.1-cudnn8-runtime
+
+# ffmpeg for RTSP decode; libgl/glib for OpenCV.
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ffmpeg libgl1 libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY requirements.txt requirements-gpu.txt ./
+RUN pip install --no-cache-dir -r requirements.txt -r requirements-gpu.txt
+
+COPY . .
+
+ENV ANPR_PIPELINE_SPOOL_DIR=/data/spool \
+    ANPR_PIPELINE_DEVICE=cuda:0
+CMD ["python", "-m", "anpr_pipeline.main"]

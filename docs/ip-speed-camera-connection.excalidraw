@@ -1,0 +1,397 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "anpr-platform",
+  "elements": [
+    {
+      "id": "title", "type": "text", "x": 40, "y": -10, "width": 760, "height": 32,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 101, "version": 1, "versionNonce": 101, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "IP Speed Camera → ANPR Platform: connection & data flow",
+      "fontSize": 24, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "IP Speed Camera → ANPR Platform: connection & data flow", "lineHeight": 1.25
+    },
+
+    {
+      "id": "boxDash", "type": "rectangle", "x": 40, "y": 60, "width": 270, "height": 100,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#d0bfff",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 1, "version": 1, "versionNonce": 1, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "boxDashText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "boxDashText", "type": "text", "x": 50, "y": 85, "width": 250, "height": 50,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 2, "version": 1, "versionNonce": 2, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "Operator Dashboard (React)\nCameras page → \"Add Camera\"",
+      "fontSize": 16, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "boxDash", "originalText": "Operator Dashboard (React)\nCameras page → \"Add Camera\"", "lineHeight": 1.25
+    },
+
+    {
+      "id": "boxAPI", "type": "rectangle", "x": 430, "y": 60, "width": 300, "height": 100,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 3, "version": 1, "versionNonce": 3, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "boxAPIText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "boxAPIText", "type": "text", "x": 440, "y": 75, "width": 280, "height": 70,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 4, "version": 1, "versionNonce": 4, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "Backend API (FastAPI)\nvalidates + stores camera\nJWT + RBAC",
+      "fontSize": 16, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "boxAPI", "originalText": "Backend API (FastAPI)\nvalidates + stores camera\nJWT + RBAC", "lineHeight": 1.25
+    },
+
+    {
+      "id": "boxDB", "type": "rectangle", "x": 850, "y": 60, "width": 300, "height": 100,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#e9ecef",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 5, "version": 1, "versionNonce": 5, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "boxDBText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "boxDBText", "type": "text", "x": 860, "y": 70, "width": 280, "height": 80,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 6, "version": 1, "versionNonce": 6, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "cameras table (Postgres)\nrtsp_url, direction,\nconfig: speed_limit_kmh,\nmeters_per_pixel",
+      "fontSize": 15, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "boxDB", "originalText": "cameras table (Postgres)\nrtsp_url, direction,\nconfig: speed_limit_kmh,\nmeters_per_pixel", "lineHeight": 1.25
+    },
+
+    {
+      "id": "boxOrch", "type": "rectangle", "x": 430, "y": 270, "width": 300, "height": 110,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#ffec99",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 7, "version": 1, "versionNonce": 7, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "boxOrchText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "boxOrchText", "type": "text", "x": 440, "y": 290, "width": 280, "height": 70,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 8, "version": 1, "versionNonce": 8, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "Pipeline orchestrator\n(main.py) fetch_cameras()\nspawns / stops workers",
+      "fontSize": 16, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "boxOrch", "originalText": "Pipeline orchestrator\n(main.py) fetch_cameras()\nspawns / stops workers", "lineHeight": 1.25
+    },
+
+    {
+      "id": "boxAlert", "type": "rectangle", "x": 850, "y": 270, "width": 300, "height": 110,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 9, "version": 1, "versionNonce": 9, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "boxAlertText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "boxAlertText", "type": "text", "x": 860, "y": 285, "width": 280, "height": 80,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 10, "version": 1, "versionNonce": 10, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "Ingest + alert engine\nPOST /api/v1/ingest/recognitions\n(X-API-Key) + evidence JPEGs\nspeed > limit → \"speed\" alert",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "boxAlert", "originalText": "Ingest + alert engine\nPOST /api/v1/ingest/recognitions\n(X-API-Key) + evidence JPEGs\nspeed > limit → \"speed\" alert", "lineHeight": 1.25
+    },
+
+    {
+      "id": "camDevice", "type": "rectangle", "x": 40, "y": 470, "width": 270, "height": 130,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 11, "version": 1, "versionNonce": 11, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "camDeviceText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "camDeviceText", "type": "text", "x": 50, "y": 490, "width": 250, "height": 90,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 12, "version": 1, "versionNonce": 12, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "IP Speed Camera\nrtsp://user:pass@\n192.168.1.108:554/stream1\nH.264/H.265 · ONVIF optional",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "camDevice", "originalText": "IP Speed Camera\nrtsp://user:pass@\n192.168.1.108:554/stream1\nH.264/H.265 · ONVIF optional", "lineHeight": 1.25
+    },
+
+    {
+      "id": "boxWorker", "type": "rectangle", "x": 430, "y": 470, "width": 300, "height": 130,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#ffec99",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 13, "version": 1, "versionNonce": 13, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "boxWorkerText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "boxWorkerText", "type": "text", "x": 440, "y": 485, "width": 280, "height": 100,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 14, "version": 1, "versionNonce": 14, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "CameraWorker thread\nVideoSource (OpenCV + FFmpeg)\nRTSP forced over TCP\nbuffer = 1 (near-live frames)\nauto-reconnect every 3 s",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "boxWorker", "originalText": "CameraWorker thread\nVideoSource (OpenCV + FFmpeg)\nRTSP forced over TCP\nbuffer = 1 (near-live frames)\nauto-reconnect every 3 s", "lineHeight": 1.25
+    },
+
+    {
+      "id": "boxChain", "type": "rectangle", "x": 850, "y": 470, "width": 300, "height": 130,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "#ffec99",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 3},
+      "seed": 15, "version": 1, "versionNonce": 15, "isDeleted": false,
+      "boundElements": [{"type": "text", "id": "boxChainText"}],
+      "updated": 1, "link": null, "locked": false
+    },
+    {
+      "id": "boxChainText", "type": "text", "x": 860, "y": 485, "width": 280, "height": 100,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 16, "version": 1, "versionNonce": 16, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "ANPR chain (per frame)\nenhance → vehicle detect →\ntrack → plate detect → OCR →\nvalidate → dedup (Redis) →\nspeed estimate (m/px calib)",
+      "fontSize": 14, "fontFamily": 1, "textAlign": "center", "verticalAlign": "middle",
+      "containerId": "boxChain", "originalText": "ANPR chain (per frame)\nenhance → vehicle detect →\ntrack → plate detect → OCR →\nvalidate → dedup (Redis) →\nspeed estimate (m/px calib)", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr1", "type": "arrow", "x": 312, "y": 110, "width": 116, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 21, "version": 1, "versionNonce": 21, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [116, 0]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl1", "type": "text", "x": 300, "y": 165, "width": 160, "height": 36,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 22, "version": 1, "versionNonce": 22, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "1. POST /api/v1/cameras\n(operator JWT)",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "1. POST /api/v1/cameras\n(operator JWT)", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr2", "type": "arrow", "x": 732, "y": 110, "width": 116, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 23, "version": 1, "versionNonce": 23, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [116, 0]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl2", "type": "text", "x": 730, "y": 165, "width": 130, "height": 18,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 24, "version": 1, "versionNonce": 24, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "2. persist camera row",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "2. persist camera row", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr3", "type": "arrow", "x": 580, "y": 268, "width": 0, "height": 104,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 25, "version": 1, "versionNonce": 25, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [0, -104]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl3", "type": "text", "x": 595, "y": 195, "width": 250, "height": 36,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 26, "version": 1, "versionNonce": 26, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "3. GET /api/v1/ingest/cameras\nevery 60 s (X-API-Key)",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "3. GET /api/v1/ingest/cameras\nevery 60 s (X-API-Key)", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr4", "type": "arrow", "x": 580, "y": 382, "width": 0, "height": 86,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 27, "version": 1, "versionNonce": 27, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [0, 86]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl4", "type": "text", "x": 595, "y": 410, "width": 220, "height": 18,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 28, "version": 1, "versionNonce": 28, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "4. one worker thread per camera",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "4. one worker thread per camera", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr5", "type": "arrow", "x": 428, "y": 510, "width": 116, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 29, "version": 1, "versionNonce": 29, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [-116, 0]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl5", "type": "text", "x": 300, "y": 435, "width": 210, "height": 36,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 30, "version": 1, "versionNonce": 30, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "5. RTSP session over TCP\nDESCRIBE / SETUP / PLAY",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "5. RTSP session over TCP\nDESCRIBE / SETUP / PLAY", "lineHeight": 1.25
+    },
+    {
+      "id": "arr6", "type": "arrow", "x": 312, "y": 560, "width": 116, "height": 0,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 31, "version": 1, "versionNonce": 31, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [116, 0]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl6", "type": "text", "x": 322, "y": 610, "width": 120, "height": 18,
+      "angle": 0, "strokeColor": "#2f9e44", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 32, "version": 1, "versionNonce": 32, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "video frames (H.264)",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "video frames (H.264)", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr7", "type": "arrow", "x": 732, "y": 535, "width": 116, "height": 0,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 33, "version": 1, "versionNonce": 33, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [116, 0]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl7", "type": "text", "x": 738, "y": 505, "width": 110, "height": 18,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 34, "version": 1, "versionNonce": 34, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "6. every Nth frame",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "6. every Nth frame", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr8", "type": "arrow", "x": 1000, "y": 468, "width": 0, "height": 86,
+      "angle": 0, "strokeColor": "#1e1e1e", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 35, "version": 1, "versionNonce": 35, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [0, -86]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl8", "type": "text", "x": 1012, "y": 410, "width": 230, "height": 36,
+      "angle": 0, "strokeColor": "#1971c2", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 36, "version": 1, "versionNonce": 36, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "7. publish recognition + evidence\n(spool to disk if backend down)",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "7. publish recognition + evidence\n(spool to disk if backend down)", "lineHeight": 1.25
+    },
+
+    {
+      "id": "arr9", "type": "arrow", "x": 848, "y": 300, "width": 536, "height": 176,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "dashed", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": {"type": 2},
+      "seed": 37, "version": 1, "versionNonce": 37, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "points": [[0, 0], [-536, -176]],
+      "lastCommittedPoint": null, "startBinding": null, "endBinding": null,
+      "startArrowhead": null, "endArrowhead": "arrow"
+    },
+    {
+      "id": "lbl9", "type": "text", "x": 340, "y": 230, "width": 250, "height": 18,
+      "angle": 0, "strokeColor": "#e03131", "backgroundColor": "transparent",
+      "fillStyle": "solid", "strokeWidth": 2, "strokeStyle": "solid", "roughness": 1,
+      "opacity": 100, "groupIds": [], "frameId": null, "roundness": null,
+      "seed": 38, "version": 1, "versionNonce": 38, "isDeleted": false,
+      "boundElements": [], "updated": 1, "link": null, "locked": false,
+      "text": "8. speed alert shown to operator (polling)",
+      "fontSize": 13, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
+      "containerId": null, "originalText": "8. speed alert shown to operator (polling)", "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

@@ -1,0 +1,33 @@
+# --- Node / frontend ---
+node_modules/
+dist/
+build/
+coverage/
+
+# --- Python (backend + pipeline) ---
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# --- Local data (regenerated at runtime) ---
+*.db
+*.db-shm
+*.db-wal
+backend/storage/plates/
+backend/data/evidence/
+pipeline/data/spool/
+
+# --- Secrets / local config ---
+.env
+backend/.env
+frontend/.env
+
+# --- Misc ---
+uploads/
+recordings/
+captures/
+.DS_Store
+.vscode/
+*.log

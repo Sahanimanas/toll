@@ -1,0 +1,11 @@
+{
+  "name": "mlff-tolling-system",
+  "version": "3.0.0",
+  "description": "MLFF Tolling System — React console + FastAPI backend + ANPR AI pipeline",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  }
+}
